@@ -1,0 +1,84 @@
+@import "variables";
+@import "normal+reset";
+@import "typography";
+@import "layout";
+
+
+h2 {
+  margin-top: 2.2em;
+}
+
+header {
+  font-weight: 700;
+}
+
+footer {
+  font-weight: 700;
+  text-align: center;
+  padding: 3em 5em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+
+.row {
+  gap: 1em;
+}
+
+.brand {
+  min-width: 100%;
+}
+
+.nav > * {
+  padding: 0.2em;
+}
+
+.post h1 {
+  text-align: center;
+  margin: 0 auto 2em;
+}
+
+.post p {
+  text-align: justify;
+}
+
+@media (min-width: 640px) {
+  header {
+    max-width: calc(1000rem + 4em);
+    margin: 0 auto;
+    
+    
+    padding: 0 2em;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer {
+    max-width: 1000rem;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 0;
+    margin-left: 2em; /* polyfill gap */
+  }
+  /* polyfill gap */
+  .nav > * + * {
+    margin-left: 2em;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
+  .post {
+    padding: 0 2em;
+  }
+}

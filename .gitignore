@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+
+# Output directories
+public
+
+# VSCode special
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Misc
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
