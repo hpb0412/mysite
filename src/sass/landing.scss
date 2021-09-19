@@ -115,26 +115,19 @@ header {
   .hero-img {
     display: block;
     position: absolute;
-    /* max-width: 400px; */
     max-width: unset;
-    max-height: 100vh;
+    height: 100vh;
     top: 0;
     left: -5rem;
-    /* right: 0;
-    bottom: 0; */
   }
 
   .hero-img-bg {
     display: block;
     position: absolute;
-    /* max-width: 400px; */
     max-width: unset;
-    max-height: 100vh;
+    height: 100vh;
     top: 0;
     left: -5rem;
-    /* right: 0;
-    bottom: 0; */
-    /* transform: translate(50%, 10%); */
     filter: grayscale(100%);
     transform: translate(10%, 20%);
     z-index: -999;
